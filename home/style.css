@@ -46,6 +46,10 @@ html {
     justify-content: space-between;
 }
 
+.menu_barras {
+    display: none;
+}
+
 .links-navegacao {
     width: 250px;
     display: flex;
@@ -323,4 +327,131 @@ footer {
     font-weight: 500;
     text-align: center;
     color: var(--background-color);
+}
+
+@media screen and (max-width: 1200px) {
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre-valores {
+        width: 100%;
+        text-align: center;
+    }
+
+    .titulo_valores {
+        text-align: center;
+    }
+
+    .conteudo-footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .imagens-petz {
+        display: none;
+    }
+
+    .anuncio-petz {
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card-perfil {
+        width: 280px;
+    }
+
+    .perfil-card {
+        width: 150px;
+    }
+
+    .titulo_painel {
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .descricao {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .redes-sociais p {
+        display: none;
+    }
+
+    .links-navegacao {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        flex-direction: column;
+        background-color: #06082170;
+        z-index: 1;
+        padding: 50px 0;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        gap: 18px;
+        align-items: center;
+    }
+
+    .menu_barras {
+        display: initial;
+        width: 40px;
+    }
+
+    .valores-topicos {
+        flex-direction: column;
+    }
+
+    .copright {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .descricao,
+    .descricao_valores,
+    .link,
+    .descricao_card {
+        width: 220px;
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .descricao_valores {
+        width: 220px;
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .titulo_painel,
+    .titulo_perfil,
+    .titulo_valores{
+        font-size: 22px;
+    }
+
+    .pilar p{
+        font-size: 15px;
+        max-width: none;
+    }
+
+    .valores-topicos{
+        padding: none
+        ;
+    }
 }
